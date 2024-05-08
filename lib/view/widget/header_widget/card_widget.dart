@@ -86,7 +86,7 @@ class CardWidget extends StatelessWidget {
               style: customTextStyle(
                 textSize: 17,
                 fontWeight: FontWeight.w600,
-                color: const Color(0xFF5D646F).withOpacity(.5),
+                color: const Color(0xFF7E818A).withOpacity(.8),
               ),
               textAlign: TextAlign.justify,
             ),
