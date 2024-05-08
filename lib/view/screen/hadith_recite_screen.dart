@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../widget/description/desc_card_item.dart';
-import '../widget/description_item.dart';
+import '../widget/description/description_item.dart';
 import '../widget/header_widget/card_item.dart';
- // Corrected import path for DynamicCardWidget
 import '../widget/app_bar/app_bar_item.dart';
 
 class HadithReciteScreen extends StatelessWidget {
@@ -25,11 +24,10 @@ class HadithReciteScreen extends StatelessWidget {
           ),
           color: Color(0xFFF4F4F4),
         ),
-        child:  const Column(
+        child:   Column(
                 children: [
                   HeaderCardItem(),
                   DescCardItem(),
-                  // Use HeaderCardItem widget here
                 ],
               ),
 

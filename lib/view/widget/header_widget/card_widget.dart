@@ -17,12 +17,10 @@ class CardWidget extends StatelessWidget {
     );
   }
 
-  // Define properties for chapter number, title, and content
   final String chapterNumber;
   final String chapterTitle;
   final String chapterContent;
 
-  // Constructor to initialize properties
   const CardWidget({
     required this.chapterNumber,
     required this.chapterTitle,
@@ -31,7 +29,6 @@ class CardWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Return a Card widget with specified styling and content
     return Card(
       color: const Color(0xFFFFFFFF),
       elevation: .1,
@@ -44,7 +41,6 @@ class CardWidget extends StatelessWidget {
             Row(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Display chapter number with custom style
                 Text(
                   '$chapterNumber: ',
                   style: const TextStyle(
@@ -58,7 +54,6 @@ class CardWidget extends StatelessWidget {
                 Flexible(
                   child: Column(
                     children: [
-                      // Display chapter title with custom style
                       Text(
                         chapterTitle,
                         style:  TextStyle(
@@ -80,13 +75,12 @@ class CardWidget extends StatelessWidget {
             ),
 
             const SizedBox(height: 22.0),
-            // Display chapter content with custom style
             Text(
               chapterContent,
               style: customTextStyle(
                 textSize: 17,
                 fontWeight: FontWeight.w600,
-                color: const Color(0xFF5D646F).withOpacity(.5),
+                color: const Color(0xFF7E818A).withOpacity(.8),
               ),
               textAlign: TextAlign.justify,
             ),

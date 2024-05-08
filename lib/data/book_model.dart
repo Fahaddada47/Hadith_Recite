@@ -17,7 +17,6 @@ class Book {
     required this.bookDescr,
   });
 
-  // Define the fromMap constructor
   factory Book.fromMap(Map<String, dynamic> map) {
     return Book(
       id: map['id'],
