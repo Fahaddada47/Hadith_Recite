@@ -13,13 +13,13 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      title:  Padding(
+      title: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Text(
-              bookTitle,
+              bookTitle.isNotEmpty ? bookTitle : 'Loading...',
               style: const TextStyle(
                 color: Color(0xFFFFFFFF),
                 fontWeight: FontWeight.w600,
@@ -31,7 +31,7 @@ class AppBarWidget extends StatelessWidget {
               height: 3,
             ),
             Text(
-              chapterTitle,
+              chapterTitle.isNotEmpty ? chapterTitle : 'Loading...',
               style: const TextStyle(
                 color: Colors.white70,
                 fontWeight: FontWeight.w500,
