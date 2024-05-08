@@ -8,7 +8,7 @@ import 'description_item.dart';
 class DescCardItem extends StatelessWidget {
   final DescCardController controller = Get.put(DescCardController());
 
-   DescCardItem({Key? key}) : super(key: key); // Add const keyword here
+   DescCardItem({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +29,7 @@ class DescCardItem extends StatelessWidget {
                 title: bookTitle,
                 title2: hadithGrade,
                 subtitleText: hadithId.toString(),
-                subtitleNumber: index + 1, // Increment index to start from 1
+                subtitleNumber: index + 1,
                 itemCount: bookAbvrCode,
                 iconData: Icons.ac_unit,
                 description: hadithArDiacless,

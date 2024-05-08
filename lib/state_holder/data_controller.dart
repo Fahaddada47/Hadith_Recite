@@ -5,7 +5,7 @@ import 'dart:io';
 import 'dart:typed_data';
 import 'package:flutter/services.dart';
 
-import '../data/book_model.dart'; // Import your data model
+import '../data/book_model.dart';
 
 class DataController extends GetxController {
   final _isLoading = true.obs;
